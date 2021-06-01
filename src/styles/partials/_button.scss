@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    background-color: $green;
+    font-size: $small;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $mont;
+    position: relative;
+    left: -50%;
+
+    &__container {
+        position: absolute;
+        left: 50%;
+    }
+
+    &--center {
+        margin: 0 auto;
+    }
+
+    &:hover {
+        background-color: darken($color: $green, $amount: 20%);
+        transition: ease-in-out 0.2s;
+        padding: 1.1rem 1.6rem;
+    }
+}

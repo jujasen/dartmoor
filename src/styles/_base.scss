@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+//Colors
+$dark: #3c3c3c;
+$green: #5dfdcb;
+$beige: #ece7e1;
+
+//Fonts
+
+$links: "Montserrat", sans-serif;
+$main: "Source Sans Pro", sans-serif;
+$deco: 'Staatliches', cursive;
+
+//Font-sizes
+$reg: 14px;
+$small: 16px;
+$medium: 20px;
+$big: 25px;
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.img {
+  &--xs {
+    width: 25px;
+  }
+
+  &--s {
+    width: 50px;
+  }
+}
+
+.text {
+  font-size: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.border-b {
+  border-bottom: 1px solid rgb(178, 178, 178);
+}
+
+.page {
+  padding-top: 66px;
+}
+
+.padded {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.block {
+  display: block;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.m {
+  &--none {
+    margin: 0 !important;
+  }
+
+  &--b {
+    margin-bottom: 2rem !important;
+  }
+
+  &--b-s {
+    margin-bottom: 1rem !important;
+  }
+
+  &--b-m {
+    margin-bottom: 4rem;
+  }
+
+  &--t {
+    margin-top: 2rem;
+  }
+
+  &--t-s {
+    margin-top: 1rem;
+  }
+
+  &--t-m {
+    margin-top: 4rem;
+  }
+
+  &--l {
+    margin-left: 2rem;
+  }
+
+  &--r {
+    margin-right: 2rem;
+  }
+}
+
+.p {
+  &--none {
+    padding: 0 !important;
+  }
+
+  &--b {
+    padding-bottom: 2rem !important;
+  }
+
+  &--b-s {
+    padding-bottom: 1rem;
+  }
+
+  &--b-m {
+    padding-bottom: 4rem;
+  }
+
+  &--t {
+    padding-top: 2rem;
+  }
+
+  &--t-s {
+    padding-top: 1rem;
+  }
+
+  &--t-m {
+    padding-top: 4rem;
+  }
+
+  &--l {
+    padding-left: 2rem;
+  }
+
+  &--r {
+    padding-right: 2rem;
+  }
+}
+
+.f {
+  display: flex;
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--a-center {
+    align-items: center;
+  }
+
+  &--j-center {
+    justify-content: center;
+  }
+
+  &--j-around {
+    justify-content: space-around;
+  }
+
+  &--j-space {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .flex {
+    display: flex;
+
+    &--wrap {
+      flex-wrap: wrap;
+    }
+
+    &--a-center {
+      align-items: center;
+    }
+
+    &--a-start {
+      align-items: flex-start;
+    }
+
+    &--j-center {
+      justify-content: center;
+    }
+
+    &--j-around {
+      justify-content: space-around;
+    }
+
+    &--j-space {
+      justify-content: space-between;
+    }
+  }
+
+  .marg {
+    &--none {
+      margin: 0 !important;
+    }
+
+    &--b {
+      margin-bottom: 2rem !important;
+    }
+
+    &--b-s {
+      margin-bottom: 1rem !important;
+    }
+
+    &--b-m {
+      margin-bottom: 4rem;
+    }
+
+    &--t {
+      margin-top: 2rem;
+    }
+
+    &--t-s {
+      margin-top: 1rem;
+    }
+
+    &--t-m {
+      margin-top: 4rem;
+    }
+
+    &--l {
+      margin-left: 2rem;
+    }
+
+    &--r {
+      margin-right: 2rem !important;
+    }
+  }
+
+  .image {
+    max-width: 700px;
+    display: block;
+
+    &--center {
+      margin: 0 auto;
+    }
+  }
+
+  .top {
+    padding-top: 70px;
+  }
+
+  .padding {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}

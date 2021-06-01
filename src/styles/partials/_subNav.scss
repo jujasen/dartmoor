@@ -1,0 +1,30 @@
+.subnav {
+    background-color: $green;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: lighten($color: $green, $amount: 10%);
+    }
+
+    &__link {
+        display: block;
+        color: $dark;
+        padding-bottom: 1rem;
+
+        &:hover {
+            font-weight: 600;
+            color: $dark;
+        }
+
+        &--desktop {
+            padding: 0 1rem;
+        }
+
+        &--active {
+            font-weight: 600;
+        }
+    }
+
+
+}

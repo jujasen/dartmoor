@@ -17,6 +17,7 @@ $reg: 14px;
 $small: 16px;
 $medium: 20px;
 $big: 25px;
+$large: 40px;
 
 
 
@@ -61,7 +62,7 @@ a:hover {
 }
 
 .page {
-  padding-top: 66px;
+  padding-top: 75px;
 }
 
 .padded {
@@ -111,8 +112,13 @@ a:hover {
   }
 
   &--r {
-    margin-right: 2rem;
+    margin-right: 2rem!important;
   }
+
+  &--r-s {
+    margin-right: 1rem!important;
+  }
+
 }
 
 .p {

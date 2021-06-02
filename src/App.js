@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import General from './pages/Home';
 import Secondary from './pages/Home';
 import MainNav from './components/MainNav';
+import Tavistock from './pages/Tavistock';
 
 function App() {
   return (
@@ -11,8 +12,7 @@ function App() {
         <MainNav/>
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/:area' exact component={General} />
-          <Route path='/:area/:section' exact component={Secondary} />
+          <Route path='/places/tavistock' exact component={Tavistock} />
         </Switch>
       </Router>
     </div>

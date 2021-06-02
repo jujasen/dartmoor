@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Heading = (props) => {
-    const { title, bold, uppercase, capitalize, center, dark, green } = props;
+    const { title, bold, uppercase, capitalize, center, dark, green, big, nomarg } = props;
 
     return (
         <h2 className={`heading 
@@ -11,6 +11,8 @@ const Heading = (props) => {
         ${center ? 'heading--center' : ''}
         ${dark ? 'heading--dark' : ''}
         ${green ? 'heading--green' : ''}
+        ${big ? 'heading--big' : ''}
+        ${nomarg ? 'heading--nomarg' : ''}
         `}>{title}</h2>
     );
 }

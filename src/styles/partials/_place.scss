@@ -1,4 +1,12 @@
 .place {
     min-height: 92vh;
     left: -1px;
+
+    &__hero{
+        background-color: $beige;
+    }
+
+    &__hero-img {
+        max-width: 200px;
+    }
 }

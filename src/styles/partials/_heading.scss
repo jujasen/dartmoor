@@ -4,6 +4,10 @@
   margin-bottom: 2rem;
   font-family: $mont;
 
+  &--big {
+    font-size: 40px;
+  }
+
   &--white {
     color: #fff;
   }
@@ -29,5 +33,9 @@
 
   &--center {
     text-align: center;
+  }
+
+  &--nomarg {
+    margin: 0;
   }
 }

@@ -4,6 +4,10 @@
     font-size: 20px;
     margin-bottom: 2rem;
 
+    &--pad {
+        padding: 1rem;
+    }
+
     &--s {
         font-size: 18px;
     }
@@ -30,5 +34,9 @@
 
     &--center {
         text-align: center;
+    }
+
+    &--nomarg {
+        margin: 0;
     }
 }

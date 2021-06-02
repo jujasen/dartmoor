@@ -16,7 +16,7 @@ const SubNavDesktop = () => {
                                     setActive('tavistock');
                                 }}
                                 className={`subnav__link subnav__link--desktop ${active === 'tavistock' ? 'subnav__link--active' : ''}`}
-                                to='/places/tavistock'>
+                                to='/places/tavistock/general'>
                                 Tavistock
                                 </Link>
                             <Link

@@ -24,7 +24,7 @@ const Home = () => {
                 </section>
                 <section className="padded">
                     <Heading title="Places in Dartmoor" bold dark center/>
-                    <ImageLink title="Tavistock" link="places/tavistock" img={Tavistock} />
+                    <ImageLink title="Tavistock" link="places/tavistock/general" img={Tavistock} />
                     <ImageLink title="Post Bridge" link="places/postbridge" img={Postbridge} />
                     <ImageLink title="Okehampton" link="places/okehampton" img={Okehampton} />
                     <ImageLink title="Widecombe" link="places/widecombe" img={Widecombe} />

@@ -17,7 +17,7 @@ const SubNavMobile = (props) => {
                                         onChildClick();
                                     }}
                                     className={`subnav__link ${active === 'tavistock' ? 'subnav__link--active' : ''}`}
-                                    to='/places/tavistock'>
+                                    to='/places/tavistock/general'>
                                     Tavistock
                                 </Link>
                                 <Link

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Text = (props) => {
-    const { text, bold, uppercase, capitalize, center, small } = props;
+    const { text, bold, uppercase, capitalize, center, small, nomarg, padding } = props;
 
     return (
         <p className={`text 
@@ -10,6 +10,8 @@ const Text = (props) => {
         ${capitalize ? 'text--capitalize' : ''}
         ${center ? 'text--center' : ''}
         ${small ? 'text--s' : ''}
+        ${nomarg ? 'text--nomarg' : ''}
+        ${padding ? 'text--pad' : ''}
         `}>{text}</p>
     );
 }

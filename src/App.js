@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import General from './pages/Home';
-import Secondary from './pages/Home';
 import MainNav from './components/MainNav';
-import Tavistock from './pages/Tavistock';
+import TavistockGeneral from './pages/tavistock/TavistockGeneral';
+import TavistockHistory from './pages/tavistock/TavistockHistory';
 
 function App() {
   return (
@@ -12,7 +11,8 @@ function App() {
         <MainNav/>
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/places/tavistock' exact component={Tavistock} />
+          <Route path='/places/tavistock/general' exact component={TavistockGeneral} />
+          <Route path='/places/tavistock/history' exact component={TavistockHistory} />
         </Switch>
       </Router>
     </div>

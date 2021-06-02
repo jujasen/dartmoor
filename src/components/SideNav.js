@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
     Icon,
     Menu,
@@ -17,7 +18,7 @@ const SideNav = (props) => {
 
     return (
         <>
-            {visible ?
+            {visible && props ?
                 <div>
                     <Sidebar
                         className="sidenav"
@@ -31,9 +32,9 @@ const SideNav = (props) => {
                         width='thin'
                     >
                         <div className="sidenav__line"></div>
-                        <p className="sidenav__title">Tavistock</p>
-                        <Link className="sidenav__link" to="/">General</Link>
-                        <Link className="sidenav__link" to="/">History</Link>
+                        <p className="sidenav__title">{title}</p>
+                        <Link onClick={handleToggle} className="sidenav__link" to={link_route1}>{link_title1}</Link>
+                        <Link onClick={handleToggle} className="sidenav__link" to={link_route2}>{link_title2}</Link>
                     </Sidebar>
                     <Icon
                         className="sidenav__toggle sidenav__toggle--clicked"
@@ -57,3 +58,11 @@ const SideNav = (props) => {
 }
 
 export default SideNav;
+
+SideNav.propTypes = {
+    title: PropTypes.string,
+    link_title1: PropTypes.string,
+    link_title2: PropTypes.string,
+    link_route1: PropTypes.string,
+    link_route2: PropTypes.string
+};

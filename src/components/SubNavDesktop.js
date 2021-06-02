@@ -24,7 +24,7 @@ const SubNavDesktop = () => {
                                     setActive('postbridge');
                                 }}
                                 className={`subnav__link subnav__link--desktop ${active === 'postbridge' ? 'subnav__link--active' : ''}`}
-                                to='/places/postbridge'>
+                                to='/places/postbridge/general'>
                                 Post Bridge
                                 </Link>
                             <Link
@@ -32,7 +32,7 @@ const SubNavDesktop = () => {
                                     setActive('okehampton');
                                 }}
                                 className={`subnav__link subnav__link--desktop ${active === 'okehampton' ? 'subnav__link--active' : ''}`}
-                                to='/places/okehampton'>
+                                to='/places/okehampton/general'>
                                 Okehampton
                                 </Link>
                             <Link
@@ -40,7 +40,7 @@ const SubNavDesktop = () => {
                                     setActive('widecombe');
                                 }}
                                 className={`subnav__link subnav__link--desktop ${active === 'widecombe' ? 'subnav__link--active' : ''}`}
-                                to='/places/widecombe'>
+                                to='/places/widecombe/general'>
                                 Widecombe
                                 </Link>
                             <Link
@@ -48,7 +48,7 @@ const SubNavDesktop = () => {
                                     setActive('buckfastleigh');
                                 }}
                                 className={`subnav__link subnav__link--desktop ${active === 'buckfastleigh' ? 'subnav__link--active' : ''}`}
-                                to='/places/buckfastleigh'>
+                                to='/places/buckfastleigh/general'>
                                 Buckfastleigh
                                 </Link>
                         </div>

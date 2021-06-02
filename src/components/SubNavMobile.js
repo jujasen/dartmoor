@@ -26,7 +26,7 @@ const SubNavMobile = (props) => {
                                         onChildClick();
                                     }}
                                     className={`subnav__link ${active === 'postbridge' ? 'subnav__link--active' : ''}`}
-                                    to='/places/postbridge'>
+                                to='/places/postbridge/general'>
                                     Post Bridge
                                 </Link>
                                 <Link
@@ -35,7 +35,7 @@ const SubNavMobile = (props) => {
                                         onChildClick();
                                     }}
                                     className={`subnav__link ${active === 'okehampton' ? 'subnav__link--active' : ''}`}
-                                    to='/places/okehampton'>
+                                to='/places/okehampton/general'>
                                     Okehampton
                                 </Link>
                                 <Link
@@ -44,7 +44,7 @@ const SubNavMobile = (props) => {
                                         onChildClick();
                                     }}
                                     className={`subnav__link ${active === 'widecombe' ? 'subnav__link--active' : ''}`}
-                                    to='/places/widecombe'>
+                                to='/places/widecombe/general'>
                                     Widecombe
                                 </Link>
                                 <Link
@@ -53,7 +53,7 @@ const SubNavMobile = (props) => {
                                         onChildClick();
                                     }}
                                     className={`subnav__link p--none ${active === 'buckfastleigh' ? 'subnav__link--active' : ''}`}
-                                    to='/places/buckfastleigh'>
+                                to='/places/buckfastleigh/general'>
                                     Buckfastleigh
                                 </Link>
                             </div>

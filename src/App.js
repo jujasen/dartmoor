@@ -7,7 +7,10 @@ import PostbridgeGeneral from './pages/postbridge/PostbridgeGeneral';
 import PostbridgeBridge from './pages/postbridge/PostbridgeBridge';
 import OkehamptonGeneral from './pages/okehampton/OkehamptonGeneral';
 import OkehamptonCastle from './pages/okehampton/OkehamptonCastle';
-
+import WidecombeGeneral from './pages/widecombe/WidecombeGeneral';
+import WidecombeFair from './pages/widecombe/WidecombeFair';
+import BuckfastleighGeneral from './pages/buckfastleigh/BuckfastleighGeneral';
+import BuckfastleighAbbey from './pages/buckfastleigh/BuckfastleighAbbey';
 
 function App() {
   return (
@@ -22,6 +25,11 @@ function App() {
           <Route path='/places/postbridge/clapperbridge' exact component={PostbridgeBridge} />
           <Route path='/places/okehampton/general' exact component={OkehamptonGeneral} />
           <Route path='/places/okehampton/castle' exact component={OkehamptonCastle} />
+          <Route path='/places/widecombe/general' exact component={WidecombeGeneral} />
+          <Route path='/places/widecombe/fair' exact component={WidecombeFair} />
+          <Route path='/places/buckfastleigh/general' exact component={BuckfastleighGeneral} />
+          <Route path='/places/buckfastleigh/abbey' exact component={BuckfastleighAbbey} />
+
         </Switch>
       </Router>
     </div>

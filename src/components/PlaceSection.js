@@ -12,7 +12,6 @@ const PlaceSection = (props) => {
 
     const { place, firstLink, secondLink, general, second, img, contentGeneral, contentSecond } = props;
 
-//name.charAt(0).toUpperCase() + name.slice(1)
     return (
         <>
         { props ?

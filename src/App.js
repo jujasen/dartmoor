@@ -11,6 +11,9 @@ import WidecombeGeneral from './pages/widecombe/WidecombeGeneral';
 import WidecombeFair from './pages/widecombe/WidecombeFair';
 import BuckfastleighGeneral from './pages/buckfastleigh/BuckfastleighGeneral';
 import BuckfastleighAbbey from './pages/buckfastleigh/BuckfastleighAbbey';
+import InfoGeneral from './pages/infocentres/InfoGeneral';
+import InfoTourist from './pages/infocentres/InfoTourist';
+import InfoCommunity from './pages/infocentres/InfoCommunity';
 
 function App() {
   return (
@@ -29,7 +32,9 @@ function App() {
           <Route path='/places/widecombe/fair' exact component={WidecombeFair} />
           <Route path='/places/buckfastleigh/general' exact component={BuckfastleighGeneral} />
           <Route path='/places/buckfastleigh/abbey' exact component={BuckfastleighAbbey} />
-
+          <Route path='/info/general' exact component={InfoGeneral} />
+          <Route path='/info/tourist' exact component={InfoTourist} />
+          <Route path='/info/community' exact component={InfoCommunity} />
         </Switch>
       </Router>
     </div>

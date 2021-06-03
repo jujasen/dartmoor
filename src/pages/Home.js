@@ -32,7 +32,7 @@ const Home = () => {
                 </section>
                 <section className="padded">
                     <Heading title="Where to learn more" bold dark center />
-                    <Link to="/info">
+                    <Link to="/info/general">
                         <Button center title="Information centers" />
                     </Link>
                 </section>

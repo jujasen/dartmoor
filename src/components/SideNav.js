@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const SideNav = (props) => {
-    const { title, link_title1, link_route1, link_title2, link_route2 } = props;
+    const { title, link_title1, link_route1, link_title2, link_route2, link_title3, link_route3 } = props;
 
     const [visible, setVisible] = useState(false)
 
@@ -35,6 +35,11 @@ const SideNav = (props) => {
                         <p className="sidenav__title">{title}</p>
                         <Link onClick={handleToggle} className="sidenav__link" to={link_route1}>{link_title1}</Link>
                         <Link onClick={handleToggle} className="sidenav__link" to={link_route2}>{link_title2}</Link>
+                        {link_route3 && link_title3 ?
+                            <Link onClick={handleToggle} className="sidenav__link" to={link_route3}>{link_title3}</Link>
+                            :
+                            ''
+                        }
                     </Sidebar>
                     <Icon
                         className="sidenav__toggle sidenav__toggle--clicked"

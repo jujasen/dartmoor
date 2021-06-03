@@ -59,7 +59,7 @@ const MainNav = () => {
                                     Places
                                 </div>
 
-                                <Link className="mainnav__link mainnav__link--desktop p--none" to='/info'>
+                                <Link className="mainnav__link mainnav__link--desktop p--none" to='/info/general'>
                                     Information centres
                                 </Link>
                             </div>
@@ -84,7 +84,7 @@ const MainNav = () => {
                                 {subMenu ? <SubNavMobile 
                                 onChildClick={handleToggle}/> : ''}
                         </div>
-                            <Link onClick={handleToggle} className="mainnav__link" to='/info'>
+                            <Link onClick={handleToggle} className="mainnav__link" to='/info/general'>
                                 Information centres
                         </Link>
                         </div>

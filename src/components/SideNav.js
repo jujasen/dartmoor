@@ -68,6 +68,8 @@ SideNav.propTypes = {
     title: PropTypes.string,
     link_title1: PropTypes.string,
     link_title2: PropTypes.string,
+    link_title3: PropTypes.string,
     link_route1: PropTypes.string,
-    link_route2: PropTypes.string
+    link_route2: PropTypes.string,
+    link_route3: PropTypes.string
 };

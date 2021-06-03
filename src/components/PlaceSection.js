@@ -6,7 +6,7 @@ import {
 import SideNav from './SideNav';
 import Heading from './Heading';
 import Text from './Text';
-
+import PropTypes from 'prop-types';
 
 const PlaceSection = (props) => {
 
@@ -60,3 +60,14 @@ const PlaceSection = (props) => {
 }
 
 export default PlaceSection;
+
+PlaceSection.propTypes = {
+    general: PropTypes.object,
+    second: PropTypes.object,
+    place: PropTypes.string,
+    firstLink: PropTypes.string,
+    secondLink: PropTypes.string,
+    img: PropTypes.any,
+};
+
+//place, firstLink, secondLink, general, second, img, contentGeneral, contentSecond

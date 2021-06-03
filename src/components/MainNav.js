@@ -19,12 +19,6 @@ const MainNav = () => {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
     }, []);
 
-    // useEffect(() => {
-    //    if(width > breakpoint) {
-    //        setMenu(false)
-    //    }
-    // }, [width]);
-
 
     const handleToggle = () => {
         setMenu(!menuClosed);

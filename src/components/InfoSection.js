@@ -96,5 +96,7 @@ const InfoSection = (props) => {
 export default InfoSection;
 
 InfoSection.propTypes = {
-    title: PropTypes.string,
+    general: PropTypes.object,
+    second: PropTypes.object,
+    third: PropTypes.object,
 };

@@ -1,0 +1,22 @@
+{
+  "title": "Tourist Centres",
+  "desc": "Information centres for tourists",
+  "centres": [
+    {
+      "title": "Ivybridge",
+      "tel": "+44 1822 890414"
+    },
+    {
+      "title": "Okehampton TIC",
+      "tel": "+44 1647 440043"
+    },
+    {
+      "title": "Tavistock TIC",
+      "tel": "+44 1364 661520"
+    },
+    {
+      "title": "Totnes TIC",
+      "tel": "+44 1822 880272"
+    }
+  ]
+}

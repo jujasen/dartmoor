@@ -32,9 +32,9 @@ const PlaceSection = (props) => {
                                 <Segment basic>
                                     <Heading nomarg big title={place.charAt(0).toUpperCase() + place.slice(1)} bold />
                                     <Heading nomarg title={general.title} bold />
-                                    <div className="place__hero f f--a-center m--b">
-                                        <Text nomarg padding text={general.hero} />
+                                    <div className="place__hero">
                                         <img className="place__hero-img" src={img} alt={place}></img>
+                                        <Text nomarg padding text={general.hero} />
                                     </div>
                                     <Text small bold text={general.bold} />
                                     <Text small text={general.main} />
@@ -43,9 +43,9 @@ const PlaceSection = (props) => {
                                     <Segment basic>
                                         <Heading nomarg big title={place.charAt(0).toUpperCase() + place.slice(1)} bold />
                                         <Heading nomarg title={second.title} bold />
-                                        <div className="place__hero f f--a-center m--b">
-                                            <Text nomarg padding text={second.hero} />
+                                        <div className="place__hero">
                                             <img className="place__hero-img" src={img} alt={place}></img>
+                                            <Text nomarg padding text={second.hero} />
                                         </div>
                                         <Text small bold text={second.bold} />
                                         <Text small text={second.main} />

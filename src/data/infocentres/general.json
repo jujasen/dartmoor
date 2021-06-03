@@ -1,0 +1,26 @@
+{
+  "title": "Dartmoor Information Centres",
+  "desc": "Use the sidemenu to see other information centres",
+  "centres": [
+    {
+      "title": "The High Moorland Visitor Centre",
+      "tel": "+44 1822 890414"
+    },
+    {
+      "title": "Moretonhampstead",
+      "tel": "+44 1647 440043"
+    },
+    {
+      "title": "Haytor",
+      "tel": "+44 1364 661520"
+    },
+    {
+      "title": "Postbridge",
+      "tel": "+44 1822 880272"
+    },
+    {
+      "title": "Ashburton",
+      "tel": "+44 1364 653426"
+    }
+  ]
+}

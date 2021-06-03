@@ -4,9 +4,11 @@
 
     &__hero{
         background-color: $beige;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     &__hero-img {
-        max-width: 200px;
+        
     }
 }

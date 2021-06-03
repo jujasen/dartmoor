@@ -1,0 +1,18 @@
+{
+  "title": "Dartmoor Information Centres",
+  "desc": "A number of moorland towns have setup and manage their own Community Information Centres with support from the National Park Authority. These valuable information centres are operated by volunteers, who provide a high level of local information.",
+  "centres": [
+    {
+      "title": "Moretonhampstead CIP",
+      "tel": "+44 1822 890414"
+    },
+    {
+      "title": "Ashburton CIP",
+      "tel": "+44 1647 440043"
+    },
+    {
+      "title": "Buckfastleigh CIP",
+      "tel": "+44 1364 661520"
+    }
+  ]
+}

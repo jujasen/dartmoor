@@ -28,10 +28,10 @@ const PlaceSection = (props) => {
                             ''}
                         <Sidebar.Pusher>
                             {contentGeneral ?
-                                <Segment basic>
+                                <Segment className="place__content" basic>
                                     <Heading nomarg big title={place.charAt(0).toUpperCase() + place.slice(1)} bold />
                                     <Heading nomarg title={general.title} bold />
-                                    <div className="place__hero">
+                                    <div className="place__hero flex">
                                         <img className="place__hero-img" src={img} alt={place}></img>
                                         <Text nomarg padding text={general.hero} />
                                     </div>
@@ -39,10 +39,10 @@ const PlaceSection = (props) => {
                                     <Text small text={general.main} />
                                 </Segment>
                                 : contentSecond ?
-                                    <Segment basic>
+                                    <Segment className="place__content" basic>
                                         <Heading nomarg big title={place.charAt(0).toUpperCase() + place.slice(1)} bold />
                                         <Heading nomarg title={second.title} bold />
-                                        <div className="place__hero">
+                                        <div className="place__hero flex">
                                             <img className="place__hero-img" src={img} alt={place}></img>
                                             <Text nomarg padding text={second.hero} />
                                         </div>

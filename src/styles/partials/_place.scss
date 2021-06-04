@@ -7,8 +7,18 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+}
 
-    &__hero-img {
-        
+@media screen and (min-width:700px) {
+    .place {
+
+        &__content {
+            max-width: 800px;
+            margin: 0 auto!important;
+        }
+
+        &__hero-img {
+            max-width: 250px;
+        }
     }
 }

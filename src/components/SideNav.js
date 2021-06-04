@@ -5,7 +5,7 @@ import {
     Sidebar,
 } from 'semantic-ui-react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from './CustomLink';
 
 const SideNav = (props) => {
     const { title, link_title1, link_route1, link_title2, link_route2, link_title3, link_route3 } = props;
@@ -33,10 +33,10 @@ const SideNav = (props) => {
                     >
                         <div className="sidenav__line"></div>
                         <p className="sidenav__title">{title}</p>
-                        <Link onClick={handleToggle} className="sidenav__link" to={link_route1}>{link_title1}</Link>
-                        <Link onClick={handleToggle} className="sidenav__link" to={link_route2}>{link_title2}</Link>
+                        <CustomLink title={link_title1} to={link_route1}/>
+                        <CustomLink title={link_title2} to={link_route2} />
                         {link_route3 && link_title3 ?
-                            <Link onClick={handleToggle} className="sidenav__link" to={link_route3}>{link_title3}</Link>
+                            <CustomLink title={link_title3} to={link_route3} />
                             :
                             ''
                         }

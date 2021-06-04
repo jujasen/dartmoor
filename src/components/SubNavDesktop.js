@@ -7,10 +7,10 @@ const SubNavDesktop = () => {
 
     return (
         <>
-            <nav className="subnav">
+            <nav className="subnav subnav--desktop">
                 <div className="f f--j-space f--a-center">
                     <div className="subnav__desktop">
-                        <div className="subnav__nav f f--a--center f--j-start">
+                        <div className="subnav__nav f f--a-center f--j-space">
                             <Link
                                 onClick={() => {
                                     setActive('tavistock');

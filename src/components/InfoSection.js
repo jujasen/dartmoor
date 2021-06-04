@@ -36,7 +36,7 @@ const InfoSection = (props) => {
                             ''}
                         <Sidebar.Pusher>
                             {contentGeneral  ? 
-                            <Segment basic>
+                            <Segment className="place__content" basic>
                                 <Heading nomarg big title="Information centres" bold />
                                 <Heading nomarg title={general.title} bold />
                                 <div className="place__hero">
@@ -52,7 +52,7 @@ const InfoSection = (props) => {
                                 })}
                             </Segment>
                             : contentSecond ? 
-                                <Segment basic>
+                                <Segment className="place__content" basic>
                                     <Heading nomarg big title="Information centres" bold />
                                     <Heading nomarg title={second.title} bold />
                                     <div className="place__hero">
@@ -68,7 +68,7 @@ const InfoSection = (props) => {
                                     })}
                                 </Segment>
                             : contentThird ? 
-                                    <Segment basic>
+                                    <Segment className="place__content" basic>
                                         <Heading nomarg big title="Information centres" bold />
                                         <Heading nomarg title={third.title} bold />
                                         <div className="place__hero">

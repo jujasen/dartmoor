@@ -3,6 +3,13 @@
     padding: 1rem 2rem;
     border-radius: 5px;
 
+    &--desktop {
+        position: absolute;
+        border-radius: 0;
+        top: 75px;
+        width: 100%;
+    }
+
     &:hover {
         background-color: lighten($color: $green, $amount: 10%);
     }

@@ -60,7 +60,7 @@ const MainNav = () => {
                         </div>
                     }
                 </div>
-                {(width > breakpoint) && menuClosed && subMenu ? <SubNavDesktop/> : ''}
+                
 
                 {!menuClosed && (width < breakpoint) ?
                     <div className="mainnav__mobile f f--col f--j-start">
@@ -87,7 +87,7 @@ const MainNav = () => {
                 
 
             </nav>
-
+            {(width > breakpoint) && menuClosed && subMenu ? <SubNavDesktop /> : ''}
         </>
     )
 

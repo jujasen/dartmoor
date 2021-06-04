@@ -15,7 +15,8 @@ const PlaceSection = (props) => {
     return (
         <>
         { props ?
-                <Grid.Column className="page">
+                <Grid.Column className="page page--desktop">
+                    <div className="line"></div>
                     <Sidebar.Pushable className="place" as={Segment}>
                         {general && second ?
                             <SideNav

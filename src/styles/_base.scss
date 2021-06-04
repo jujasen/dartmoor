@@ -11,7 +11,7 @@ $beige: #ece7e1;
 $links: "Montserrat", sans-serif;
 $mont: "Montserrat", sans-serif;
 $main: "Source Sans Pro", sans-serif;
-$deco: 'Staatliches', cursive;
+$deco: "Staatliches", cursive;
 
 //Font-sizes
 $reg: 14px;
@@ -19,8 +19,6 @@ $small: 16px;
 $medium: 20px;
 $big: 25px;
 $large: 40px;
-
-
 
 * {
   box-sizing: border-box;
@@ -113,14 +111,19 @@ a:hover {
   }
 
   &--r {
-    margin-right: 2rem!important;
+    margin-right: 2rem !important;
   }
 
   &--r-s {
-    margin-right: 1rem!important;
+    margin-right: 1rem !important;
   }
-
 }
+
+  .ui.segment {
+    border: none!important;
+    border-radius: 0!important;
+    margin-top: 0;
+  }
 
 .p {
   &--none {
@@ -173,6 +176,10 @@ a:hover {
 
   &--j-center {
     justify-content: center;
+  }
+
+  &--j-end {
+    justify-content: flex-end;
   }
 
   &--j-around {
@@ -267,5 +274,28 @@ a:hover {
   .padding {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .page {
+
+    &--desktop {
+      padding-top: 100px;
+    }
+  }
+
+  .line {
+    content: "";
+    height: 20px;
+    width: 100%;
+    background-color: $green;
+    top: 76px;
+    z-index: 1;
+    position: fixed;
+  }
+
+  .ui.segment {
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
   }
 }

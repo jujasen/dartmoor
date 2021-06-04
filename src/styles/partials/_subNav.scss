@@ -4,10 +4,11 @@
     border-radius: 5px;
 
     &--desktop {
-        position: absolute;
+        position: fixed;
         border-radius: 0;
         top: 75px;
         width: 100%;
+        z-index: 2;
     }
 
     &:hover {

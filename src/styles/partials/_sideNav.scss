@@ -14,10 +14,14 @@
     &__toggle {
         z-index: 950;
         color: $dark;
-        margin-top: 1rem!important;
+        margin-top: 40vh!important;
+        position: absolute;
 
         &--clicked {
-            margin-left: 250px!important;
+            margin-left: 245px!important;
+            color: $green;
+            background-color: $dark;
+            border-radius: 5px;
         }
     }
 

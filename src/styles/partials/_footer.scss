@@ -24,6 +24,20 @@
             font-weight: 700;
         }
     }
+
+    &__info {
+        font-family: $mont;
+        text-align: center;
+
+        a {
+            color: $dark;
+
+            &:hover {
+                color: $dark;
+                font-weight: 700;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 700px) {

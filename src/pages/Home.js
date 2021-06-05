@@ -30,7 +30,7 @@ const Home = () => {
                     <ImageLink title="Widecombe" link="places/widecombe/general" img={Widecombe} />
                     <ImageLink title="Buckfastleigh" link="places/buckfastleigh/general" img={Buckfastleigh} />
                 </section>
-                <section className="padded p--b-m">
+                <section className="padded p--b-l">
                     <Heading title="Where to learn more" bold dark center />
                     <Link className="block" to="/info/general">
                         <Button center title="Information centers" />

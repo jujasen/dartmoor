@@ -119,11 +119,11 @@ a:hover {
   }
 }
 
-  .ui.segment {
-    border: none!important;
-    border-radius: 0!important;
-    margin-top: 0;
-  }
+.ui.segment {
+  border: none !important;
+  border-radius: 0 !important;
+  margin-top: 0;
+}
 
 .p {
   &--none {
@@ -140,6 +140,10 @@ a:hover {
 
   &--b-m {
     padding-bottom: 4rem;
+  }
+
+  &--b-l {
+    padding-bottom: 6rem;
   }
 
   &--t {
@@ -277,7 +281,6 @@ a:hover {
   }
 
   .page {
-
     &--desktop {
       padding-top: 100px;
     }

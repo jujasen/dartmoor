@@ -15,7 +15,7 @@ const InfoSection = (props) => {
     return (
         <>
             
-                <Grid.Column className="page">
+            <Grid.Column className="page page--desktop">
                     <Sidebar.Pushable className="place" as={Segment}>
                         {general && second && third ?
                             <SideNav

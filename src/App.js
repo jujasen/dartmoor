@@ -14,6 +14,7 @@ import BuckfastleighAbbey from './pages/buckfastleigh/BuckfastleighAbbey';
 import InfoGeneral from './pages/infocentres/InfoGeneral';
 import InfoTourist from './pages/infocentres/InfoTourist';
 import InfoCommunity from './pages/infocentres/InfoCommunity';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path='/info/tourist' exact component={InfoTourist} />
           <Route path='/info/community' exact component={InfoCommunity} />
         </Switch>
+        <Footer/>
       </Router>
     </div>
   );

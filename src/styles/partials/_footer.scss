@@ -1,0 +1,35 @@
+.footer {
+    background-color: $green;
+    padding: 1rem;
+
+    &__logo {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    &__link {
+        color: $dark;
+        font-family: $mont;
+        display: block;
+        margin-bottom: 1rem;
+
+        &--main {
+            text-decoration: underline;
+        }
+
+        &:hover {
+            color: $dark;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .footer {
+        &__logo {
+            margin: 0;
+        }
+    }
+}

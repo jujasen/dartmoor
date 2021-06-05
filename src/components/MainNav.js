@@ -93,9 +93,6 @@ const MainNav = () => {
                 
 
             </nav>
-            {console.log('break', (width > breakpoint))}
-            {console.log('mobilemenuclosed', menuClosed)}
-            {console.log('åpnet sub desktop', subMenuDesktop)}
             {(width > breakpoint) && menuClosed && subMenuDesktop ? <SubNavDesktop /> : ''}
         </>
     )

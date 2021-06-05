@@ -12,33 +12,32 @@ const Footer = () => {
                     <div className="m--r">
                         <Link className="footer__link footer__link--main" to='/'>
                             Home
-                </Link>
+                        </Link>
                         <Link className="footer__link footer__link--main" to='/info/general'>
                             Information centres
-                </Link>
+                        </Link>
                     </div>
                     <div>
                         <p className="footer__link footer__link--main">Places</p>
                         <Link className="footer__link" to='/places/tavistock/general'>
                             Tavistock
-                    </Link>
+                        </Link>
                         <Link className="footer__link" to='/places/postbridge/general'>
                             Post Bridge
-                    </Link>
+                        </Link>
                         <Link className="footer__link" to='/places/okehampton/general'>
                             Okehampton
-                    </Link>
+                        </Link>
                         <Link className="footer__link" to='/places/widecombe/general'>
                             Widecombe
-                    </Link>
+                        </Link>
                         <Link className="footer__link" to='/places/buckfastleigh/general'>
                             Buckfastleigh
-                    </Link>
+                        </Link>
                     </div>
                 </nav>
             </div>
             <p className="footer__info">All images from <a href="https://pixabay.com/">Pixabay</a></p>
-
         </footer>
     )
 }

@@ -70,5 +70,3 @@ PlaceSection.propTypes = {
     secondLink: PropTypes.string,
     img: PropTypes.any,
 };
-
-//place, firstLink, secondLink, general, second, img, contentGeneral, contentSecond

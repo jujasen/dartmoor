@@ -10,7 +10,8 @@ const MainNav = () => {
     //Method for listening to breakpoint: https://blog.logrocket.com/developing-responsive-layouts-with-react-hooks/
 
     const [menuClosed, setMenu] = useState(true);
-    const [subMenu, setSubMenu] = useState(false);
+    const [subMenuMobile, setSubMenuMobile] = useState(false);
+    const [subMenuDesktop, setSubMenuDesktop] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
 
     const breakpoint = 700;
@@ -19,6 +20,11 @@ const MainNav = () => {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
     }, []);
 
+    useEffect(() => {
+        if (width > breakpoint ) {
+            setMenu(true);
+        }
+    }, [width]);
 
     const handleToggle = () => {
         setMenu(!menuClosed);
@@ -47,7 +53,7 @@ const MainNav = () => {
                                 </Link>
                                 <div 
                                 onClick={() => {
-                                    setSubMenu(!subMenu)
+                                    setSubMenuDesktop(!subMenuDesktop)
                                 }}
                                 className="mainnav__link mainnav__link--desktop" >
                                     Places
@@ -71,11 +77,11 @@ const MainNav = () => {
                             <div>
                                 <p
                                 onClick={() => {
-                                    setSubMenu(!subMenu)
+                                    setSubMenuMobile(!subMenuMobile)
                                 }}
                                 className="mainnav__link"
                                 >Places</p>
-                                {subMenu ? <SubNavMobile 
+                                {subMenuMobile ? <SubNavMobile 
                                 onChildClick={handleToggle}/> : ''}
                         </div>
                             <Link onClick={handleToggle} className="mainnav__link" to='/info/general'>
@@ -87,7 +93,10 @@ const MainNav = () => {
                 
 
             </nav>
-            {(width > breakpoint) && menuClosed && subMenu ? <SubNavDesktop /> : ''}
+            {console.log('break', (width > breakpoint))}
+            {console.log('mobilemenuclosed', menuClosed)}
+            {console.log('åpnet sub desktop', subMenuDesktop)}
+            {(width > breakpoint) && menuClosed && subMenuDesktop ? <SubNavDesktop /> : ''}
         </>
     )
 
